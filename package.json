@@ -1,0 +1,24 @@
+{
+  "name": "bs_er",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:install": "npm-run-all --serial install:*",
+    "install:main": "cd main && yarn",
+    "install:react": "cd react && yarn",
+    "install:purehtml-r": "cd purehtml-r && yarn",
+    "dev:start": "npm-run-all --parallel start:*",
+    "start:main": "cd main && yarn start",
+    "start:react": "cd react && yarn start",
+    "start:purehtml-r": "cd purehtml-r && yarn start",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "cd main && yarn build",
+    "build:react": "cd react && yarn build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
